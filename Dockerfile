@@ -34,4 +34,4 @@ EXPOSE 8080
 # Copy start script
 COPY /etc/scripts/start.sh /usr/local/start.sh
 RUN chmod a+x /usr/local/start.sh
-WORKDIR /usr/local/
+CMD /usr/local/start.sh
